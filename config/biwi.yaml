@@ -1,0 +1,68 @@
+# Dataset
+# ------------------------------------------
+# type of dataset
+dataset: "BIWI"
+# path of the audio signals
+wav_path: "wav"
+# path of the GT
+vertices_path: "vertices_npy"
+# path of GT sentences
+sentence_path: "sentences.txt"
+# path of the personalized templates
+template_file: "templates.pkl"
+# number of vertices
+vertice_dim: 70110 # =23370*3
+# subjects
+train_subjects: "F2 F3 F4 M3 M4 M5"
+val_subjects: "F2 F3 F4 M3 M4 M5"
+test_subjects: "F1 F5 F6 F7 F8 M1 M2 M6"
+# path of object file
+obj_filename: "BIWI/rigid_scans/F1.obj"
+
+# Model
+# ------------------------------------------
+# dimension of feature of facial animator
+feature_dim: 128
+# period in PPE
+period: 25
+# path of lip reading model
+lipreader_path: ""
+
+# Training
+# ------------------------------------------
+# number of epochs
+max_epoch: 100
+lipread_weight: 0.0000001
+lip_vert_weight: 1
+# learning rate
+lr: 0.0001
+# gradient accumulation
+gradient_accumulation_steps: 1
+# how many epochs to save checkpoints every
+ckpt_interval: 25
+
+# Running
+# ------------------------------------------
+device: "cuda"
+
+# Logging & Saving
+# ------------------------------------------
+# path to save predicted meshes
+save_pred_path: "outputs/pred"
+# path to save rendered videos
+save_video_path: "outputs/video"
+# path to the trained model
+save_model_path: "outputs/model"
+
+# Testing
+# ------------------------------------------
+test_model_path: ""
+
+# Rendering
+# ------------------------------------------
+# path of the mesh in BIWI topology
+render_template_path: "templates"
+# whether to use black background
+background_black: True
+# frame frate
+fps: 25

@@ -1,0 +1,68 @@
+# Dataset
+# ------------------------------------------
+# type of dataset
+dataset: "vocaset"
+# path of the audio signals
+wav_path: "wav"
+# path of the GT
+vertices_path: "vertices_npy"
+# path of GT sentences
+sentence_path: "sentencestext"
+# path of the personalized templates
+template_file: "templates.pkl"
+# number of vertices
+vertice_dim: 15069 # =5023*3
+# subjects
+train_subjects: "FaceTalk_170728_03272_TA FaceTalk_170904_00128_TA FaceTalk_170725_00137_TA FaceTalk_170915_00223_TA FaceTalk_170811_03274_TA FaceTalk_170913_03279_TA FaceTalk_170904_03276_TA FaceTalk_170912_03278_TA"
+val_subjects: "FaceTalk_170811_03275_TA FaceTalk_170908_03277_TA"
+test_subjects: "FaceTalk_170809_00138_TA FaceTalk_170731_00024_TA"
+# path of object file
+obj_filename: "/home/eungi/FLAME_model/head_template.obj"
+
+# Model
+# ------------------------------------------
+# dimension of feature of facial animator
+feature_dim: 64
+# period in PPE
+period: 30
+# path of lip reading model
+lipreader_path: ""
+
+# Training
+# ------------------------------------------
+# number of epochs
+max_epoch: 100
+lipread_weight: 0.0000001
+lip_vert_weight: 1
+# learning rate
+lr: 0.0001
+# gradient accumulation
+gradient_accumulation_steps: 1
+# how many epochs to save checkpoints every
+ckpt_interval: 25
+
+# Running
+# ------------------------------------------
+device: "cuda"
+
+# Logging & Saving
+# ------------------------------------------
+# path to save predicted meshes
+save_pred_path: "outputs/pred"
+# path to save rendered videos
+save_video_path: "outputs/video"
+# path to the trained model
+save_model_path: "outputs/model"
+
+# Testing
+# ------------------------------------------
+test_model_path: ""
+
+# Rendering
+# ------------------------------------------
+# path of the mesh in FLAME topology
+render_template_path: "templates"
+# whether to use black background
+background_black: True
+# frame frate
+fps: 30

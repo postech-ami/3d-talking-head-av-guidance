@@ -1,0 +1,17 @@
+einops
+scipy==1.7.1
+librosa==0.8.1
+tqdm
+transformers==4.6.1
+trimesh==3.9.27
+pyrender==0.1.45
+pyopengl==3.1.0
+pyglet==1.5.27
+opencv-python
+pyyaml
+#numpy
+#scikit-image
+#pickle
+sentencepiece
+av
+pytorch3d
