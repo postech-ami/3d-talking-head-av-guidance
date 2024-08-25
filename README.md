@@ -158,14 +158,14 @@ The results will be saved to `outputs/video`.
 If you find this code useful for your work, please consider citing:
 
 ```
-@article{eungi2024enhancing,
-  title={Enhancing Speech-Driven 3D Facial Animation with Audio-Visual Guidance from Lip Reading Expert},
-  author={EunGi, Han and Hyun-Bin, Oh and Sung-Bin, Kim and Etcheberry, Corentin Nivelet and Nam, Suekyeong and Joo, Janghoon and Oh, Tae-Hyun},
-  journal={arXiv preprint arXiv:2407.01034},
-  year={2024}
+@inproceeding{eungi2024enhancing,
+	title={Enhancing Speech-Driven 3D Facial Animation with Audio-Visual Guidance from Lip Reading Expert},
+	author={EunGi, Han and Hyun-Bin, Oh and Sung-Bin, Kim and Nivelet Etcheberry, Corentin and Nam, Suekyeong and Ju, Janghoon and Oh, Tae-Hyun},
+	booktitle={INTERSPEECH 2024},
+	year={2024}
 }
 ```
 
 ## Acknowledgement
 
-We heavily borrow the code from [FaceFormer](). We sincerely appreciate those authors.
+We heavily borrow the code from [FaceFormer](https://github.com/EvelynFan/FaceFormer). We sincerely appreciate those authors.
