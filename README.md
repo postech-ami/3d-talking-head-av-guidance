@@ -8,7 +8,7 @@ This repository contains the official implementation of the INTERSPEECH 2024 pap
 
 ### Installation
 
-This code was developed on Ubuntu 18.04 with Python 3.8, CUDA 11.3 and Pytorch 1.10.0.
+This code was developed on Ubuntu 18.04 with Python 3.8, CUDA 11.3, and Pytorch 1.10.0.
 
 Clone this repo:
 
@@ -36,9 +36,9 @@ BOOST_INCLUDE_DIRS=/usr/lib/x86_64-linux-gnu make all
 
 ### Lip reading expert
 
-For your convenience, download the model weight [here](https://drive.google.com/file/d/1mU6MHzXMiq1m6GI-8gqT2zc2bdStuBXu/view?usp=sharing), and fill the configuration `lipreader_path` with the path of model.
+For your convenience, download the model weight [here](https://drive.google.com/file/d/1mU6MHzXMiq1m6GI-8gqT2zc2bdStuBXu/view?usp=sharing), and fill in the configuration `lipreader_path` with the path of model.
 
-Clone the repository [Auto-AVSR](https://github.com/mpc001/auto_avsr) in this directory and update the import lines of below files as `auto_avsr/[existing_imports]`. For instance,
+Clone the repository [Auto-AVSR](https://github.com/mpc001/auto_avsr) in this directory and update the import lines of the below files as `auto_avsr/[existing_imports]`. For instance,
 
 ```py
 # BEFORE
@@ -97,7 +97,7 @@ Follow the [instructions of CodeTalker](https://github.com/Doubiiu/CodeTalker/bl
 
 To get the vertex indices of lip geion, download [indices list](https://github.com/Doubiiu/CodeTalker/blob/main/BIWI/regions/lve.txt) and locate it at `BIWI/lve.txt`.
 
-> 2024.08.24. | Unfortunatly, BIWI dataset is not available now.
+> 2024.08.24. | Unfortunately, BIWI dataset is not available now.
 
 
 
@@ -117,7 +117,7 @@ The trained models will be saved to `outputs/model`.
 python test.py --dataset vocaset --test_model_path [path_of_model_weight]
 ```
 
-The results will be saved to `outputs/pred`. You can download the pretrained model from [faceformer_avguidance_vocaset.pth]().
+The results will be saved to `outputs/pred`. You can download the pretrained model from [faceformer_avguidance_vocaset.pth](https://drive.google.com/file/d/1qVu8zzHjatbyPCIPrWZS6jB4I8kiA2rw/view?usp=sharing).
 
 - To visualize the results, run:
 ```bash
@@ -143,7 +143,7 @@ The trained models will be saved to `outputs/model`
 python test.py --dataset BIWI --test_model_path [path_of_model_weight]
 ```
 
-The results will be saved to `outputs/pred`. You can download the pretrained model from [faceformer_avguidance_biwi.pth]().
+The results will be saved to `outputs/pred`. You can download the pretrained model from [faceformer_avguidance_biwi.pth](https://drive.google.com/file/d/1HpY43-Rw4gbQOB9-4X75hOI5L7O98X3J/view?usp=sharing).
 
 - To visualize the results, run:
 ```bash
