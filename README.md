@@ -158,11 +158,14 @@ The results will be saved to `outputs/video`.
 If you find this code useful for your work, please consider citing:
 
 ```
-@inproceeding{eungi2024enhancing,
-	title={Enhancing Speech-Driven 3D Facial Animation with Audio-Visual Guidance from Lip Reading Expert},
-	author={EunGi, Han and Hyun-Bin, Oh and Sung-Bin, Kim and Nivelet Etcheberry, Corentin and Nam, Suekyeong and Ju, Janghoon and Oh, Tae-Hyun},
-	booktitle={INTERSPEECH 2024},
-	year={2024}
+@inproceedings{eungi24_interspeech,
+  title     = {Enhancing Speech-Driven 3D Facial Animation with Audio-Visual Guidance from Lip Reading Expert},
+  author    = {Han EunGi and Oh Hyun-Bin and Kim Sung-Bin and Corentin {Nivelet Etcheberry} and Suekyeong Nam and Janghoon Ju and Tae-Hyun Oh},
+  year      = {2024},
+  booktitle = {Interspeech 2024},
+  pages     = {2940--2944},
+  doi       = {10.21437/Interspeech.2024-1595},
+  issn      = {2958-1796},
 }
 ```
 
